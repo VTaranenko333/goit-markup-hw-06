@@ -48,9 +48,24 @@ img {
 
 /* Контейнер */
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  /* max-width: 1158px; */
+  width: 320px;
+  /* padding: 0 15px; */
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* #endregion */
@@ -70,7 +85,7 @@ header {
 .header-container {
   align-items: center;
   display: flex;
-  width: 1158px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -83,7 +98,9 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+  /* margin-right: 76px; */
+  margin-right: auto;
+  padding: 16px;
 }
 
 .header-nav {
@@ -93,7 +110,8 @@ header {
 }
 
 .header-menu {
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -150,12 +168,14 @@ header {
 /* #region Address */
 
 .address {
+  display: none;
   font-style: normal;
 }
 
 .address-menu {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .address-item {
@@ -174,6 +194,17 @@ header {
 
 /* #endregion */
 
+.mobile-menu {}
+
+.mobile-menu-btn {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.menu-btn-icon {}
+
 /* #endregion */
 
 /* #region First section */
@@ -186,7 +217,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   max-width: 1440px;
-  padding: 188px 0;
+  padding: 72px 0;
   margin: 0 auto;
 }
 
@@ -200,7 +231,7 @@ header {
   max-width: 496px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .main-hero-btn {
@@ -234,50 +265,47 @@ header {
 
 /* #region Second section */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .advantages {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .advantages-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .advantages-list-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .advantages-list-title {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.2;*/
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .advantages-list-text {
-  font-weight: 400;
+  /* font-weight: 400;
+  line-height: 1.5;*/
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -295,7 +323,8 @@ header {
 
 .advantages-list-div {
   box-sizing: border-box;
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: #f4f4fd;
@@ -306,6 +335,8 @@ header {
   width: 264px;
   height: 112px;
 }
+
+
 
 /* #endregion */
 
@@ -872,31 +903,202 @@ header {
 ./images/gallery/img-1_sm@2x.jpg 2x " type=" image/jpg" />
 <img class="card-img" src="./images/gallery/img-1_lg.jpg" alt="Ноутбук" width="450" height="294"
 loading="lazy" /></picture> */
+
 /* #endregion */
 
-@media only screen and (min-width: 320px) {
-    {}
-}
+@media screen and (min-width: 768px) {
 
+  /* #region Global */
 
-@media only screen and (min-width: 768px) {
-    {}
-}
-
-@media only screen and (min-width: 1158px) {
-    {}
-}
-
-/* #region comented fragment */
-
-/* 
-  .checkbox-section .checkbox-input:checked+.checkbox-label .checkbox-span {
-    background-color: #404bbf;
-    border: none;
+  .container {
+    width: 768px;
   }
 
-  .checkbox-section .checkbox-input:checked+.checkbox-label .checkbox-span .checkbox-icon {
-    fill: #F4F4FD;
-} */
+  /* #endregion */
 
-/* #endregion */
+  /* #region Heder */
+
+  .header {}
+
+  .container {}
+
+  .header-container {
+    width: 768px;
+  }
+
+  .header-nav {}
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-span {}
+
+  .header-menu {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .header-menu-item {}
+
+  .first-menu-item {}
+
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address-menu {}
+
+  .address-item {}
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* #endregion */
+
+  /* #region First section */
+
+  .main-hero-section {
+    padding: 112px 0;
+  }
+
+  .main-hero-title {
+    margin-bottom: 36px;
+  }
+
+  /* #endregion */
+
+  /* #region Second section */
+
+  .advantages-list {
+    gap: 72px 24px;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-list-title {
+    text-align: left;
+  }
+
+  /* #endregion */
+
+  /* #region Thirs section */
+
+  /* #endregion */
+
+  /* #region Forth section */
+
+  /* #endregion */
+
+  /* #region Footer */
+
+  /* #endregion */
+
+  /* #region modal overlay section */
+
+  /* #endregion */
+}
+
+@media screen and (min-width: 1158px) {
+  /* #region Global */
+
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+
+  /* #endregion */
+
+  /* #region Header */
+
+  .header {}
+
+  .container {}
+
+  .header-container {}
+
+  .header-nav {}
+
+  .header-logo {}
+
+  .header-span {}
+
+  .header-menu {}
+
+  .header-menu-item {}
+
+  .first-menu-item {}
+
+  .address {
+    display: inline;
+
+    gap: 40px;
+  }
+
+  .address-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    ;
+  }
+
+  .address-item {}
+
+  /* #endregion */
+
+  /* #region First section */
+
+  /* #endregion */
+
+  /* #region Second section */
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advantages-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .advantages-list-text {
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .advantages-list-div {
+    display: flex;
+  }
+
+  /* #endregion */
+
+  /* #region Thirs section */
+
+  /* #endregion */
+
+  /* #region Forth section */
+
+  /* #endregion */
+
+  /* #region Footer */
+
+  /* #endregion */
+
+  /* #region modal overlay section */
+
+  /* #endregion */
+
+}
