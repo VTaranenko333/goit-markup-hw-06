@@ -994,6 +994,20 @@ loading="lazy" /></picture> */
 
   /* #region Third section */
 
+  .team-section {
+    padding: 96px 108px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   /* #endregion */
 
   /* #region Forth section */
