@@ -441,15 +441,16 @@ header {
 /* #region Forth section */
 
 .portfolio-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* gap: 24px 48px; */
+
 }
 
 .portfolio-title {
@@ -464,8 +465,10 @@ header {
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
+  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 48px;
 }
 
 .portfolio-list-item:hover {
@@ -530,11 +533,18 @@ header {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 96px 0;
 }
 
+
 .footer-logo-div {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72px;
+  /* gap: 72px; */
 }
 
 .footer-logo {
@@ -566,7 +576,9 @@ header {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
+
 }
 
 /* footer second section */
@@ -574,7 +586,10 @@ header {
 .footer-socials {
   display: flex;
   flex-direction: column;
-  margin-right: 80px;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 72px;
+  /* margin-right: 80px; */
 }
 
 .footer-media-text {
@@ -624,7 +639,8 @@ header {
 .footer-form-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .footer-form-container-text {
@@ -638,6 +654,7 @@ header {
 
 .footer-subscribe-form {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -993,8 +1010,13 @@ loading="lazy" /></picture> */
   /* #region Third section */
 
   .team-section {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
+
+  .team-section-container {
+    padding: 0 96px;
+  }
+
 
   .team-list {
     flex-direction: row;
@@ -1003,12 +1025,28 @@ loading="lazy" /></picture> */
   }
 
   .team-list-item {
-    width: calc((100% - 24px) / 2);
+    /* width: calc((100% - 64px) / 2); */
+
   }
 
   /* #endregion */
 
   /* #region Forth section */
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-list-item {
+    padding-bottom: 0;
+  }
+
 
   /* #endregion */
 
@@ -1125,6 +1163,18 @@ loading="lazy" /></picture> */
   /* #endregion */
 
   /* #region Forth section */
+
+  .portfolio-section {
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+  }
 
   /* #endregion */
 
