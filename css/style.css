@@ -96,7 +96,6 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  /* margin-right: 76px; */
   margin-right: auto;
   padding: 16px;
 }
@@ -108,7 +107,6 @@ header {
 }
 
 .header-menu {
-  /* display: flex; */
   display: none;
   gap: 40px;
 }
@@ -149,7 +147,7 @@ header {
   border-radius: 2px;
 }
 
-
+/* bonus */
 /* .header-menu-item:hover::after {
   content: '';
   width: 100%;
@@ -264,31 +262,24 @@ header {
 /* #region Second section */
 
 .advantages {
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
 .advantages-container {
   display: flex;
-  /* flex-direction: column; */
 }
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
 }
 
 .advantages-list-item {
   width: 100%;
-  /* width: calc((100% - 72px) / 4); */
 }
 
 .advantages-list-title {
-  /* font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;*/
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
@@ -299,8 +290,6 @@ header {
 }
 
 .advantages-list-text {
-  /* font-weight: 400;
-  line-height: 1.5;*/
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -321,7 +310,6 @@ header {
 
 .advantages-list-div {
   box-sizing: border-box;
-  /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
@@ -341,7 +329,6 @@ header {
 /* #region Third section */
 
 .team-section {
-  /* padding: 120px 0; */
   padding: 72px 0;
   background-color: #F4F4FD
 }
@@ -349,7 +336,6 @@ header {
 .team-list {
   display: flex;
   flex-direction: column;
-  /* gap: 24px; */
   padding-left: 12px;
   padding-right: 12px;
   gap: 72px;
@@ -367,7 +353,6 @@ header {
 }
 
 .team-list-item {
-  /* width: calc((100% - 72px) / 4); */
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -375,7 +360,6 @@ header {
 }
 
 .team-member-description {
-  /* padding: 32px 0; */
   padding: 32px 16px;
 }
 
@@ -407,10 +391,6 @@ header {
   gap: 24px;
 }
 
-/* .team-social-link-svg {
-  
-} */
-
 .social-item {
   width: 40px;
   height: 40px;
@@ -441,15 +421,12 @@ header {
 /* #region Forth section */
 
 .portfolio-section {
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* gap: 24px 48px; */
 
 }
 
@@ -466,7 +443,6 @@ header {
 
 .portfolio-list-item {
   width: 100%;
-  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-bottom: 48px;
 }
@@ -533,18 +509,15 @@ header {
 
 .footer {
   background-color: #2e2f42;
-  /* padding: 100px 0; */
   padding: 96px 0;
 }
 
 
 .footer-logo-div {
-  /* margin-right: 120px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 72px;
-  /* gap: 72px; */
 }
 
 .footer-logo {
@@ -719,9 +692,9 @@ header {
   position: fixed;
   top: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .modal {
@@ -729,7 +702,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 408px; */
   width: 304px;
   min-height: 584px;
   background-color: #FCFCFC;
@@ -1187,10 +1159,6 @@ loading="lazy" /></picture> */
     padding: 100px 0;
   }
 
-  /* .footer-logo-div {
-      padding-bottom: 16px;
-    } */
-
   .footer-container {
     flex-wrap: nowrap;
   }
@@ -1198,7 +1166,6 @@ loading="lazy" /></picture> */
   .footer-logo-div {
     margin-right: 120px;
     padding: 0;
-    /* gap: 72px; */
   }
 
   .footer-socials {
