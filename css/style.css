@@ -48,9 +48,7 @@ img {
 
 /* Контейнер */
 .container {
-  /* max-width: 1158px; */
   width: 320px;
-  /* padding: 0 15px; */
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -1106,6 +1104,23 @@ loading="lazy" /></picture> */
   /* #endregion */
 
   /* #region Third section */
+
+  .team-section {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .team-member-description {
+    padding: 32px 0;
+  }
+
 
   /* #endregion */
 
