@@ -37,12 +37,71 @@
           </li>
         </ul>
       </address>
+      <!---------------------- Mobile menu ---------------------->
       <div class="mobile-menu">
-        <button class="mobile-menu-btn" type="button">
+        <button class="mobile-menu-btn menu-open-btn" type="button">
           <svg class="menu-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#mobile-menu-btn-icon"></use>
           </svg>
         </button>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay">
+      <button type="button" class="menu-close-btn">
+        <svg class="overlay-close-img" width="8" height="8">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu">
+          <li>
+            <a class="mobile-menu-item first-mob-menu-item" href="./index.html">Studio</a>
+          </li>
+          <li><a class="mobile-menu-item" href="">Portfolio</a></li>
+          <li><a class="mobile-menu-item" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mobile-address">
+        <ul class="mobile-address-menu">
+          <li>
+            <a class="mobile-address-item" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="mobile-address-item" href="tel:+110001111111" target="_blank">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+      <div class="container mobile-social-container">
+        <ul class="mobile-social-list">
+          <li class="mobile-item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <svg class="mobile-link-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <svg class="mobile-link-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <svg class="mobile-link-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <svg class="mobile-link-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -420,7 +479,7 @@
     </div>
   </footer>
 
-  <div class="backdrop is-open">
+  <div class="backdrop">
     <div class="modal">
       <button type="button" class="modal-close">
         <svg class="overlay-close-img" width="8" height="8">
