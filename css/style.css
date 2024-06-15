@@ -289,7 +289,7 @@ header {
   color: #404bbf;
 }
 
-.mobile-address-item-email {
+.mobile-address-item-phone {
   color: #404bbf;
 }
 
@@ -345,7 +345,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   max-width: 767px;
   padding: 72px 0;
   margin: 0 auto;
@@ -363,7 +362,7 @@ header {
 
 .main-hero-title {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
@@ -656,7 +655,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -699,7 +698,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .footer-media-text {
@@ -765,7 +764,9 @@ header {
 .footer-subscribe-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
+
 }
 
 .footer-email-label {
@@ -791,7 +792,7 @@ header {
 }
 
 .footer-subscribe-button {
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -806,6 +807,7 @@ header {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  padding: 8px 24px;
 }
 
 .footer-subscribe-icon {
@@ -1069,6 +1071,11 @@ loading="lazy" /></picture> */
     flex-direction: column;
   }
 
+  .address-item {
+    font-size: 12px;
+    line-height: 1.16667;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -1089,7 +1096,6 @@ loading="lazy" /></picture> */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     max-width: 1157px;
     padding: 72px 0;
     margin: 0 auto;
@@ -1107,6 +1113,9 @@ loading="lazy" /></picture> */
 
   .main-hero-title {
     margin-bottom: 36px;
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
   }
 
   /* #endregion */
@@ -1134,7 +1143,8 @@ loading="lazy" /></picture> */
   }
 
   .team-section-container {
-    padding: 0 96px;
+    width: 584px;
+    padding: 0;
   }
 
   .team-list {
@@ -1168,12 +1178,11 @@ loading="lazy" /></picture> */
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-
-    padding: 0 98px;
+    width: 584px;
   }
 
   .footer-logo-div {
-    padding-right: 24px;
+    margin-right: 24px;
     align-items: start;
   }
 
@@ -1253,6 +1262,10 @@ loading="lazy" /></picture> */
   /* #endregion */
 
   /* #region First section */
+
+  .main-hero-title {
+    font-size: 56px;
+  }
 
   /* #endregion */
 
