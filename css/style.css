@@ -351,6 +351,16 @@ header {
   margin: 0 auto;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resoluion: 2dppx),
+(min-resoluion: 192dpi) {
+  .main-hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url("../images/mobile-hero-bg-x2.jpg");
+  }
+}
+
 .main-hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -1085,6 +1095,16 @@ loading="lazy" /></picture> */
     margin: 0 auto;
   }
 
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resoluion: 2dppx),
+  (min-resoluion: 192dpi) {
+    .main-hero-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url("../images/tab-hero-bg-x2.jpg");
+    }
+  }
+
   .main-hero-title {
     margin-bottom: 36px;
   }
@@ -1197,6 +1217,16 @@ loading="lazy" /></picture> */
     max-width: 1440px;
     padding: 72px 0;
     margin: 0 auto;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resoluion: 2dppx),
+  (min-resoluion: 192dpi) {
+    .main-hero-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url("../images/hero-bg-x2.jpg");
+    }
   }
 
   .container {
